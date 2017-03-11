@@ -7,7 +7,6 @@ package CLI.Cards;
 public interface Card {
     void Route();
     void Connection();
-    void Type();
+    void Changes();
     void Location();
-
 }
