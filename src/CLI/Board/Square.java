@@ -5,7 +5,6 @@ import CLI.Cards.Card;
 /**
  * Project Saboteur
  * Created by TonyZheng on 15/3/17.
- * Using Intellij IDEA
  */
 public class Square {
     private int[] location = new int[2];
@@ -29,7 +28,7 @@ public class Square {
     private Card card = null;
 
     public Square(int x, int y) {
-        location = new int[]{x, y};
+        location = new int[]{y, x};
     }
 
 }
