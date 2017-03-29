@@ -23,10 +23,6 @@ public class RouteCard extends Card {
         route[4]=m;
     }
 
-    public void station(){
-
-    }
-
     /*
      * every Route card have a route set
      * using int[] here to store data
