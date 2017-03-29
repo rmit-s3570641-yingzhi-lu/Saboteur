@@ -13,6 +13,7 @@ public class Worker extends Player {
 
     /**
      * get the card that can own by Worker player
+     *
      * @return ArrayList<String></String> Wcard
      */
     public ArrayList<String> getWCard() {
@@ -21,6 +22,7 @@ public class Worker extends Player {
 
     /**
      * set the card that can be owned by Worker player
+     *
      * @param WCard ArrayList<String></String> Wcard
      */
     public void setWCard(ArrayList<String> WCard) {
@@ -35,12 +37,13 @@ public class Worker extends Player {
     /**
      * card hold in player (card type and number)
      */
-    private HashMap<Card,Integer> cardIntegerHashMap = new HashMap<Card, Integer>();
+    private HashMap<String, Integer> cardIntegerHashMap = new HashMap<String, Integer>();
 
     /**
      * Constructor of Worker Class
      * All param are super from superclass Player
-     * @param ID String ID
+     *
+     * @param ID    String ID
      * @param score double score
      */
     public Worker(String ID, double score) {

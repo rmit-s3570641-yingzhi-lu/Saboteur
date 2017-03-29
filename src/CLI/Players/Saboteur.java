@@ -13,6 +13,7 @@ public class Saboteur extends Player {
 
     /**
      * get the list of card which Saboteur player can have in hand
+     *
      * @return ArrayList<String></String> Scard
      */
     public ArrayList<String> getScard() {
@@ -22,6 +23,7 @@ public class Saboteur extends Player {
     /**
      * set the list of card which Saboteur player can have in hand
      * may not be used....
+     *
      * @param scard ArrayList<String></String> Scard
      */
     public void setScard(ArrayList<String> scard) {
@@ -36,7 +38,8 @@ public class Saboteur extends Player {
     /**
      * Constructor of Saboteur player
      * All param are super from superclass
-     * @param id String id
+     *
+     * @param id    String id
      * @param score double score
      */
     public Saboteur(String id, double score) {
@@ -46,6 +49,6 @@ public class Saboteur extends Player {
     /**
      * Card number hold in player
      */
-    private HashMap<Card,Integer> cardIntegerHashMap = new HashMap<Card, Integer>();
+    private HashMap<String, Integer> cardIntegerHashMap = new HashMap<String, Integer>();
 
 }

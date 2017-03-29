@@ -15,12 +15,12 @@ public class RouteCard extends Card {
      * 0=not access
      * 1=access
      */
-    public RouteCard(int l,int r,int t,int b,int m){
-        route[0]=l;
-        route[1]=r;
-        route[2]=t;
-        route[3]=b;
-        route[4]=m;
+    public RouteCard(int l, int r, int t, int b, int m) {
+        route[0] = l;
+        route[1] = r;
+        route[2] = t;
+        route[3] = b;
+        route[4] = m;
     }
 
     /**
@@ -39,15 +39,15 @@ public class RouteCard extends Card {
      * if = 1 means can be access
      * if = 0 means can not access
      */
-    public void setRouteCard(int location,int accessable){
-        route[location]=accessable;
+    public void setRouteCard(int location, int accessable) {
+        route[location] = accessable;
     }
 
     /**
      * I want to add compare method here
      * card1 card2    card put location
      */
-    public boolean compareRoute(){
+    public boolean compareRoute() {
         return true;
     }
 
