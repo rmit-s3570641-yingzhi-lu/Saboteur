@@ -8,9 +8,16 @@ import CLI.Cards.Card;
  */
 public class Board {
 
+    /**
+     * This is a basic board collection
+     * 10*10 squares here
+     */
     public Square[][] board = new Square[10][10];
 
-
+    /**
+     * set every Square in Board as a empty Square
+     * and set location using constructor
+     */
     public void setBorad(){
         for(int y = 0;y<10;y++){
             for(int x = 0;x<10;x++){
