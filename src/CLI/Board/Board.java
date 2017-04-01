@@ -1,6 +1,9 @@
 package CLI.Board;
 
 import CLI.Cards.Card;
+import CLI.Cards.StartPoint;
+
+import java.util.Random;
 
 /**
  * Project Saboteur
@@ -12,7 +15,7 @@ public class Board {
      * This is a basic board collection
      * 10*10 squares here
      */
-    public Square[][] board = new Square[10][10];
+    public static Square[][] board = new Square[10][10];
 
     /**
      * set every Square in Board as a empty Square
@@ -34,8 +37,8 @@ public class Board {
      * @param location int[x,y]
      * @return return true when success, false when already have card
      */
-    public boolean putRouteCard(Card card, int[] location) {
-        boolean state = false;
+    public static boolean putCard(Card card, int[] location) {
+        boolean state;
         Square square = board[location[0]][location[1]];
         if (square.getCard() == null) {
             square.setCard(card);
@@ -45,5 +48,7 @@ public class Board {
         }
         return state;
     }
+
+
 
 }
