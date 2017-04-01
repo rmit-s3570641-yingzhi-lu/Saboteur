@@ -11,4 +11,14 @@ public abstract class ActionCard extends Card {
      * Action cards must have doAction() method
      */
     public abstract void doAction();
+
+    /**
+     * the refactor of getting Introduction of the card
+     *
+     * @return String introduction
+     */
+    public static String getIntroduction() {
+        String introduction = null;
+        return introduction;
+    }
 }

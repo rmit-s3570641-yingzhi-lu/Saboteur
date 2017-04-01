@@ -7,6 +7,21 @@ package CLI.Cards;
 public class RouteCard extends Card {
 
     /**
+     * Get introduction from the Card.
+     *
+     * @return String introduction
+     */
+    public static String getIntroduction() {
+        return introduction;
+    }
+
+    /**
+     * the introduction will display in the UI
+     */
+    private final static String introduction = "Route Card: Worker: \n" +
+            "Saboteur:";
+
+    /**
      * l=left
      * r=right
      * t=top
