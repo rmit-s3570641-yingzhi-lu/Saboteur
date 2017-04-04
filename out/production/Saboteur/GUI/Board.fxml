@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardController">
+   <children>
+      <BorderPane layoutX="427.0" layoutY="217.0" prefHeight="900.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </center>
+         <left>
+            <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <opaqueInsets>
+                  <Insets right="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <children>
+                  <Pane fx:id="Player1">
+                     <children>
+                        <Label layoutX="28.0" layoutY="32.0" text="Player1" />
+                        <TextField fx:id="Player1Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                     </children></Pane>
+                  <Pane fx:id="Player2" GridPane.columnIndex="1">
+                     <children>
+                        <Label layoutX="27.0" layoutY="32.0" text="Player2" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField fx:id="Player2Score" layoutX="19.0" layoutY="184.0" prefWidth="62.0" />
+                     </children></Pane>
+                  <Pane fx:id="Player3" GridPane.rowIndex="1">
+                     <children>
+                        <Label layoutX="27.0" layoutY="34.0" text="Player3" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField fx:id="Player3Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                     </children></Pane>
+                  <Pane fx:id="Player4" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label layoutX="27.0" layoutY="35.0" text="Player4" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField fx:id="Player4Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                     </children></Pane>
+                  <Pane fx:id="Player5" GridPane.rowIndex="2">
+                     <children>
+                        <Label layoutX="27.0" layoutY="30.0" text="Player5" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField fx:id="Player5Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                     </children></Pane>
+                  <Pane fx:id="Player6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label layoutX="27.0" layoutY="31.0" text="Player6" />
+                        <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                        <Label layoutX="32.0" layoutY="156.0" text="Score" />
+                        <TextField fx:id="Player6Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                     </children></Pane>
+               </children>
+            </GridPane>
+         </left>
+         <right>
+            <GridPane gridLinesVisible="true" prefHeight="731.0" prefWidth="194.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <opaqueInsets>
+                  <Insets left="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </right>
+         <top>
+            <Pane prefHeight="150.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="PlayerNum" layoutX="170.0" layoutY="36.0" prefHeight="27.0" prefWidth="100.0" />
+                  <Label layoutX="46.0" layoutY="41.0" text="Numbers of Player" />
+                  <Label layoutX="46.0" layoutY="102.0" text="Numbers of Gold" />
+                  <TextField fx:id="GoldNum" layoutX="170.0" layoutY="97.0" prefHeight="27.0" prefWidth="100.0" />
+                  <Button fx:id="Generate" layoutX="320.0" layoutY="36.0" mnemonicParsing="false" onAction="#setNum" text="Genreate" />
+                  <Button fx:id="Cencal" layoutX="328.0" layoutY="97.0" mnemonicParsing="false" text="Cencal" />
+                  <TextArea fx:id="Introduction" layoutX="629.0" layoutY="19.0" prefHeight="112.0" prefWidth="551.0" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fe297c-dbcd-43ae-9f4b-734a7d761166" name="Default" comment="Add putRouteCard() method with comment&#10;Reformat Code using Auto Format">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/MainMenu.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/typing_corrector_settings.xml" afterPath="$PROJECT_DIR$/.idea/typing_corrector_settings.xml" />
+    <list default="true" id="64fe297c-dbcd-43ae-9f4b-734a7d761166" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CLI/Players/Player.java" afterPath="$PROJECT_DIR$/src/CLI/Players/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CLI/System.java" afterPath="$PROJECT_DIR$/src/CLI/System.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Board.fxml" afterPath="$PROJECT_DIR$/src/GUI/Board.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/BoardController.java" afterPath="$PROJECT_DIR$/src/GUI/BoardController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -935,7 +926,7 @@
       <workItem from="1491278993401" duration="845000" />
       <workItem from="1491280524065" duration="23000" />
       <workItem from="1491280711712" duration="1807000" />
-      <workItem from="1491286238347" duration="2842000" />
+      <workItem from="1491286238347" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="Pre-Creat some classes and packages">
       <created>1489151395562</created>
@@ -1021,11 +1012,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490762985189</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add GUI .fxml file &#10;Add controller Class&#10;Add some method in controller">
+      <created>1491289212161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491289212161</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36896000" />
+    <option name="totallyTimeSpent" value="36999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1192" height="1200" extended-state="6" />
@@ -1097,7 +1095,8 @@
     <MESSAGE value="make changes" />
     <MESSAGE value="Add numbers of comment" />
     <MESSAGE value="Add putRouteCard() method with comment&#10;Reformat Code using Auto Format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add putRouteCard() method with comment&#10;Reformat Code using Auto Format" />
+    <MESSAGE value="Add GUI .fxml file &#10;Add controller Class&#10;Add some method in controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GUI .fxml file &#10;Add controller Class&#10;Add some method in controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
