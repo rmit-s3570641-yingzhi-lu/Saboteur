@@ -61,4 +61,22 @@ public class Player {
         this.ID = ID;
         this.score = score;
     }
+
+    /**
+     * This is the factor of getting Role of the Player
+     * And the role will be display in the UI
+     *
+     * @param player player witch need to get
+     * @return String the role of the player
+     */
+    public static String getRole(Player player) {
+        String role = null;
+        if (player instanceof Worker) {
+            role = "Worker";
+        }
+        if (player instanceof Saboteur) {
+            role = "Saboteur";
+        }
+        return role;
+    }
 }
