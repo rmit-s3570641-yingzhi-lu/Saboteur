@@ -13,7 +13,7 @@ public class Card {
      * @param card Card will be get
      * @return String the introduction of the Card
      */
-    public String displayIntroduction(Card card) {
+    public static String displayIntroduction(Card card) {
         String introduction = null;
         if (card instanceof GoldCard) {
             introduction = GoldCard.getIntroduction();

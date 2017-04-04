@@ -1,6 +1,7 @@
 package CLI;
 
 import CLI.Board.Board;
+import CLI.Cards.Card;
 import CLI.Cards.GoldCard;
 import CLI.Cards.StartPoint;
 import CLI.Players.Player;
@@ -93,4 +94,9 @@ public class System {
         }
     }
 
+    public static String getIntroduction(Card card){
+        String introduction;
+        introduction = Card.displayIntroduction(card);
+        return introduction;
+    }
 }

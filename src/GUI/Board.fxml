@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardController">
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardController">
     <children>
         <BorderPane layoutX="427.0" layoutY="217.0" prefHeight="900.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <center>
@@ -239,7 +240,10 @@
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </padding>
                     <children>
-                        <Pane fx:id="card0101" onDragDetected="#dragDetected" />
+                        <Pane fx:id="card0101" onDragDetected="#dragDetected">
+                     <children>
+                        <ImageView layoutX="-50.0" layoutY="-21.0" onMouseClicked="#setPic" pickOnBounds="true" preserveRatio="true" />
+                     </children></Pane>
                   <Pane fx:id="card0201" GridPane.columnIndex="1" />
                   <Pane fx:id="card0102" GridPane.rowIndex="1" />
                   <Pane fx:id="card0202" GridPane.columnIndex="1" GridPane.rowIndex="1" />

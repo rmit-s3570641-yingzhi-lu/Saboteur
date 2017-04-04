@@ -185,7 +185,7 @@ public class BoardController extends Application {
     public String getURL( Pane card ) {
         int[] ints;
         ints = switchCardNum(card);
-        String URL = "CardImage" + ints[0] + ints[1] + ".jpg";
+        String URL = "/Path/CardImage" + ints[0] + ints[1] + ".jpg";
         return URL;
     }
 
@@ -213,4 +213,8 @@ public class BoardController extends Application {
         db.setContent(cb);
         event.consume();
     }
+
+//    public String getIntroduction(){
+//        String
+//    }
 }
