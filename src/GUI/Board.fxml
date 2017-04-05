@@ -14,538 +14,640 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardController">
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardController">
     <children>
-        <BorderPane layoutX="427.0" layoutY="217.0" prefHeight="900.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <BorderPane layoutX="427.0" layoutY="217.0" prefHeight="900.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <center>
                 <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <padding>
-                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
                     </padding>
                     <children>
 
-                        <Pane fx:id="board0102" onDragDropped="#dragDrop0102" onDragOver="#dragOver0102" GridPane.rowIndex="1">
+                        <Pane fx:id="board0102" onDragDropped="#dragDrop0102" onDragOver="#dragOver0102"
+                              GridPane.rowIndex="1" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0102" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0102" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0202" onDragDropped="#dragDrop0202" onDragOver="#dragOver0202" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Pane fx:id="board0202" onDragDropped="#dragDrop0202" onDragOver="#dragOver0202"
+                              GridPane.columnIndex="1" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0202" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0202" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0302" onDragDropped="#dragDrop0302" onDragOver="#dragOver0302" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <Pane fx:id="board0302" onDragDropped="#dragDrop0302" onDragOver="#dragOver0302"
+                              GridPane.columnIndex="2" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0302" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0302" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0402" onDragDropped="#dragDrop0402" onDragOver="#dragOver0402" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <Pane fx:id="board0402" onDragDropped="#dragDrop0402" onDragOver="#dragOver0402"
+                              GridPane.columnIndex="3" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0402" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0402" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0502" onDragDropped="#dragDrop0502" onDragOver="#dragOver0502" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                        <Pane fx:id="board0502" onDragDropped="#dragDrop0502" onDragOver="#dragOver0502"
+                              GridPane.columnIndex="4" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0502" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0502" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0602" onDragDropped="#dragDrop0602" onDragOver="#dragOver0602" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                        <Pane fx:id="board0602" onDragDropped="#dragDrop0602" onDragOver="#dragOver0602"
+                              GridPane.columnIndex="5" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0602" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0602" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0702" onDragDropped="#dragDrop0702" onDragOver="#dragOver0702" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                        <Pane fx:id="board0702" onDragDropped="#dragDrop0702" onDragOver="#dragOver0702"
+                              GridPane.columnIndex="6" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0702" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0702" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0802" onDragDropped="#dragDrop0802" onDragOver="#dragOver0802" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                        <Pane fx:id="board0802" onDragDropped="#dragDrop0802" onDragOver="#dragOver0802"
+                              GridPane.columnIndex="7" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0802" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0802" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0902" onDragDropped="#dragDrop0902" onDragOver="#dragOver0902" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                        <Pane fx:id="board0902" onDragDropped="#dragDrop0902" onDragOver="#dragOver0902"
+                              GridPane.columnIndex="8" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image0902" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0902" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1002" onDragDropped="#dragDrop1002" onDragOver="#dragOver1002" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                        <Pane fx:id="board1002" onDragDropped="#dragDrop1002" onDragOver="#dragOver1002"
+                              GridPane.columnIndex="9" GridPane.rowIndex="1">
                             <children>
-                                <ImageView fx:id="image1002" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1002" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0103" onDragDropped="#dragDrop0103" onDragOver="#dragOver0103" GridPane.rowIndex="2">
+                        <Pane fx:id="board0103" onDragDropped="#dragDrop0103" onDragOver="#dragOver0103"
+                              GridPane.rowIndex="2" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0103" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0103" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0203" onDragDropped="#dragDrop0203" onDragOver="#dragOver0203" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Pane fx:id="board0203" onDragDropped="#dragDrop0203" onDragOver="#dragOver0203"
+                              GridPane.columnIndex="1" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0203" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0203" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0303" onDragDropped="#dragDrop0303" onDragOver="#dragOver0303" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <Pane fx:id="board0303" onDragDropped="#dragDrop0303" onDragOver="#dragOver0303"
+                              GridPane.columnIndex="2" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0303" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0303" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0403" onDragDropped="#dragDrop0403" onDragOver="#dragOver0403" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <Pane fx:id="board0403" onDragDropped="#dragDrop0403" onDragOver="#dragOver0403"
+                              GridPane.columnIndex="3" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0403" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0403" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0503" onDragDropped="#dragDrop0503" onDragOver="#dragOver0503" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                        <Pane fx:id="board0503" onDragDropped="#dragDrop0503" onDragOver="#dragOver0503"
+                              GridPane.columnIndex="4" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0503" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0503" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0603" onDragDropped="#dragDrop0603" onDragOver="#dragOver0603" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                        <Pane fx:id="board0603" onDragDropped="#dragDrop0603" onDragOver="#dragOver0603"
+                              GridPane.columnIndex="5" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0603" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0603" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0703" onDragDropped="#dragDrop0703" onDragOver="#dragOver0703" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                        <Pane fx:id="board0703" onDragDropped="#dragDrop0703" onDragOver="#dragOver0703"
+                              GridPane.columnIndex="6" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0703" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0703" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0803" onDragDropped="#dragDrop0803" onDragOver="#dragOver0803" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                        <Pane fx:id="board0803" onDragDropped="#dragDrop0803" onDragOver="#dragOver0803"
+                              GridPane.columnIndex="7" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0803" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0803" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0903" onDragDropped="#dragDrop0903" onDragOver="#dragOver0903" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                        <Pane fx:id="board0903" onDragDropped="#dragDrop0903" onDragOver="#dragOver0903"
+                              GridPane.columnIndex="8" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image0903" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0903" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1003" onDragDropped="#dragDrop1003" onDragOver="#dragOver1003" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                        <Pane fx:id="board1003" onDragDropped="#dragDrop1003" onDragOver="#dragOver1003"
+                              GridPane.columnIndex="9" GridPane.rowIndex="2">
                             <children>
-                                <ImageView fx:id="image1003" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1003" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0104" onDragDropped="#dragDrop0104" onDragOver="#dragOver0104" GridPane.rowIndex="3">
+                        <Pane fx:id="board0104" onDragDropped="#dragDrop0104" onDragOver="#dragOver0104"
+                              GridPane.rowIndex="3" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0104" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0104" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0204" onDragDropped="#dragDrop0204" onDragOver="#dragOver0204" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <Pane fx:id="board0204" onDragDropped="#dragDrop0204" onDragOver="#dragOver0204"
+                              GridPane.columnIndex="1" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0204" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0204" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0304" onDragDropped="#dragDrop0304" onDragOver="#dragOver0304" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                        <Pane fx:id="board0304" onDragDropped="#dragDrop0304" onDragOver="#dragOver0304"
+                              GridPane.columnIndex="2" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0304" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0304" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0404" onDragDropped="#dragDrop0404" onDragOver="#dragOver0404" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                        <Pane fx:id="board0404" onDragDropped="#dragDrop0404" onDragOver="#dragOver0404"
+                              GridPane.columnIndex="3" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0404" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0404" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0504" onDragDropped="#dragDrop0504" onDragOver="#dragOver0504" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                        <Pane fx:id="board0504" onDragDropped="#dragDrop0504" onDragOver="#dragOver0504"
+                              GridPane.columnIndex="4" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0504" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0504" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0604" onDragDropped="#dragDrop0604" onDragOver="#dragOver0604" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                        <Pane fx:id="board0604" onDragDropped="#dragDrop0604" onDragOver="#dragOver0604"
+                              GridPane.columnIndex="5" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0604" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0604" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0704" onDragDropped="#dragDrop0704" onDragOver="#dragOver0704" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                        <Pane fx:id="board0704" onDragDropped="#dragDrop0704" onDragOver="#dragOver0704"
+                              GridPane.columnIndex="6" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0704" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0704" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0804" onDragDropped="#dragDrop0804" onDragOver="#dragOver0804" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                        <Pane fx:id="board0804" onDragDropped="#dragDrop0804" onDragOver="#dragOver0804"
+                              GridPane.columnIndex="7" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0804" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0804" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0904" onDragDropped="#dragDrop0904" onDragOver="#dragOver0904" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                        <Pane fx:id="board0904" onDragDropped="#dragDrop0904" onDragOver="#dragOver0904"
+                              GridPane.columnIndex="8" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image0904" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0904" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1004" onDragDropped="#dragDrop1004" onDragOver="#dragOver1004" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                        <Pane fx:id="board1004" onDragDropped="#dragDrop1004" onDragOver="#dragOver1004"
+                              GridPane.columnIndex="9" GridPane.rowIndex="3">
                             <children>
-                                <ImageView fx:id="image1004" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1004" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0105" onDragDropped="#dragDrop0105" onDragOver="#dragOver0105" GridPane.rowIndex="4">
+                        <Pane fx:id="board0105" onDragDropped="#dragDrop0105" onDragOver="#dragOver0105"
+                              GridPane.rowIndex="4" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0105" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0105" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0205" onDragDropped="#dragDrop0205" onDragOver="#dragOver0205" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <Pane fx:id="board0205" onDragDropped="#dragDrop0205" onDragOver="#dragOver0205"
+                              GridPane.columnIndex="1" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0205" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0205" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0305" onDragDropped="#dragDrop0305" onDragOver="#dragOver0305" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                        <Pane fx:id="board0305" onDragDropped="#dragDrop0305" onDragOver="#dragOver0305"
+                              GridPane.columnIndex="2" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0305" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0305" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0405" onDragDropped="#dragDrop0405" onDragOver="#dragOver0405" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                        <Pane fx:id="board0405" onDragDropped="#dragDrop0405" onDragOver="#dragOver0405"
+                              GridPane.columnIndex="3" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0405" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0405" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0505" onDragDropped="#dragDrop0505" onDragOver="#dragOver0505" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                        <Pane fx:id="board0505" onDragDropped="#dragDrop0505" onDragOver="#dragOver0505"
+                              GridPane.columnIndex="4" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0505" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0505" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0605" onDragDropped="#dragDrop0605" onDragOver="#dragOver0605" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                        <Pane fx:id="board0605" onDragDropped="#dragDrop0605" onDragOver="#dragOver0605"
+                              GridPane.columnIndex="5" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0605" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0605" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0705" onDragDropped="#dragDrop0705" onDragOver="#dragOver0705" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                        <Pane fx:id="board0705" onDragDropped="#dragDrop0705" onDragOver="#dragOver0705"
+                              GridPane.columnIndex="6" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0705" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0705" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0805" onDragDropped="#dragDrop0805" onDragOver="#dragOver0805" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                        <Pane fx:id="board0805" onDragDropped="#dragDrop0805" onDragOver="#dragOver0805"
+                              GridPane.columnIndex="7" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0805" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0805" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0905" onDragDropped="#dragDrop0905" onDragOver="#dragOver0905" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                        <Pane fx:id="board0905" onDragDropped="#dragDrop0905" onDragOver="#dragOver0905"
+                              GridPane.columnIndex="8" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image0905" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0905" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1005" onDragDropped="#dragDrop1005" onDragOver="#dragOver1005" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                        <Pane fx:id="board1005" onDragDropped="#dragDrop1005" onDragOver="#dragOver1005"
+                              GridPane.columnIndex="9" GridPane.rowIndex="4">
                             <children>
-                                <ImageView fx:id="image1005" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1005" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0106" onDragDropped="#dragDrop0106" onDragOver="#dragOver0106" GridPane.rowIndex="5">
+                        <Pane fx:id="board0106" onDragDropped="#dragDrop0106" onDragOver="#dragOver0106"
+                              GridPane.rowIndex="5" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0106" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0106" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0206" onDragDropped="#dragDrop0206" onDragOver="#dragOver0206" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <Pane fx:id="board0206" onDragDropped="#dragDrop0206" onDragOver="#dragOver0206"
+                              GridPane.columnIndex="1" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0206" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0206" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0306" onDragDropped="#dragDrop0306" onDragOver="#dragOver0306" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                        <Pane fx:id="board0306" onDragDropped="#dragDrop0306" onDragOver="#dragOver0306"
+                              GridPane.columnIndex="2" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0306" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0306" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0406" onDragDropped="#dragDrop0406" onDragOver="#dragOver0406" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                        <Pane fx:id="board0406" onDragDropped="#dragDrop0406" onDragOver="#dragOver0406"
+                              GridPane.columnIndex="3" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0406" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0406" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0506" onDragDropped="#dragDrop0506" onDragOver="#dragOver0506" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                        <Pane fx:id="board0506" onDragDropped="#dragDrop0506" onDragOver="#dragOver0506"
+                              GridPane.columnIndex="4" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0506" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0506" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0606" onDragDropped="#dragDrop0606" onDragOver="#dragOver0606" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                        <Pane fx:id="board0606" onDragDropped="#dragDrop0606" onDragOver="#dragOver0606"
+                              GridPane.columnIndex="5" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0606" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0606" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0706" onDragDropped="#dragDrop0706" onDragOver="#dragOver0706" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                        <Pane fx:id="board0706" onDragDropped="#dragDrop0706" onDragOver="#dragOver0706"
+                              GridPane.columnIndex="6" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0706" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0706" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0806" onDragDropped="#dragDrop0806" onDragOver="#dragOver0806" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                        <Pane fx:id="board0806" onDragDropped="#dragDrop0806" onDragOver="#dragOver0806"
+                              GridPane.columnIndex="7" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0806" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0806" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0906" onDragDropped="#dragDrop0906" onDragOver="#dragOver0906" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                        <Pane fx:id="board0906" onDragDropped="#dragDrop0906" onDragOver="#dragOver0906"
+                              GridPane.columnIndex="8" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image0906" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0906" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1006" onDragDropped="#dragDrop1006" onDragOver="#dragOver1006" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                        <Pane fx:id="board1006" onDragDropped="#dragDrop1006" onDragOver="#dragOver1006"
+                              GridPane.columnIndex="9" GridPane.rowIndex="5">
                             <children>
-                                <ImageView fx:id="image1006" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1006" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0107" onDragDropped="#dragDrop0107" onDragOver="#dragOver0107" GridPane.rowIndex="6">
+                        <Pane fx:id="board0107" onDragDropped="#dragDrop0107" onDragOver="#dragOver0107"
+                              GridPane.rowIndex="6" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0107" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0107" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0207" onDragDropped="#dragDrop0207" onDragOver="#dragOver0207" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <Pane fx:id="board0207" onDragDropped="#dragDrop0207" onDragOver="#dragOver0207"
+                              GridPane.columnIndex="1" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0207" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0207" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0307" onDragDropped="#dragDrop0307" onDragOver="#dragOver0307" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <Pane fx:id="board0307" onDragDropped="#dragDrop0307" onDragOver="#dragOver0307"
+                              GridPane.columnIndex="2" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0307" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0307" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0407" onDragDropped="#dragDrop0407" onDragOver="#dragOver0407" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                        <Pane fx:id="board0407" onDragDropped="#dragDrop0407" onDragOver="#dragOver0407"
+                              GridPane.columnIndex="3" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0407" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0407" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0507" onDragDropped="#dragDrop0507" onDragOver="#dragOver0507" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                        <Pane fx:id="board0507" onDragDropped="#dragDrop0507" onDragOver="#dragOver0507"
+                              GridPane.columnIndex="4" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0507" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0507" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0607" onDragDropped="#dragDrop0607" onDragOver="#dragOver0607" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                        <Pane fx:id="board0607" onDragDropped="#dragDrop0607" onDragOver="#dragOver0607"
+                              GridPane.columnIndex="5" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0607" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0607" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0707" onDragDropped="#dragDrop0707" onDragOver="#dragOver0707" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                        <Pane fx:id="board0707" onDragDropped="#dragDrop0707" onDragOver="#dragOver0707"
+                              GridPane.columnIndex="6" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0707" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0707" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0807" onDragDropped="#dragDrop0807" onDragOver="#dragOver0807" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                        <Pane fx:id="board0807" onDragDropped="#dragDrop0807" onDragOver="#dragOver0807"
+                              GridPane.columnIndex="7" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0807" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0807" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0907" onDragDropped="#dragDrop0907" onDragOver="#dragOver0907" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                        <Pane fx:id="board0907" onDragDropped="#dragDrop0907" onDragOver="#dragOver0907"
+                              GridPane.columnIndex="8" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image0907" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0907" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1007" onDragDropped="#dragDrop1007" onDragOver="#dragOver1007" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                        <Pane fx:id="board1007" onDragDropped="#dragDrop1007" onDragOver="#dragOver1007"
+                              GridPane.columnIndex="9" GridPane.rowIndex="6">
                             <children>
-                                <ImageView fx:id="image1007" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1007" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0108" onDragDropped="#dragDrop0108" onDragOver="#dragOver0108" GridPane.rowIndex="7">
+                        <Pane fx:id="board0108" onDragDropped="#dragDrop0108" onDragOver="#dragOver0108"
+                              GridPane.rowIndex="7" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0108" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0108" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0208" onDragDropped="#dragDrop0208" onDragOver="#dragOver0208" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <Pane fx:id="board0208" onDragDropped="#dragDrop0208" onDragOver="#dragOver0208"
+                              GridPane.columnIndex="1" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0208" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0208" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0308" onDragDropped="#dragDrop0308" onDragOver="#dragOver0308" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                        <Pane fx:id="board0308" onDragDropped="#dragDrop0308" onDragOver="#dragOver0308"
+                              GridPane.columnIndex="2" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0308" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0308" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0408" onDragDropped="#dragDrop0408" onDragOver="#dragOver0408" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                        <Pane fx:id="board0408" onDragDropped="#dragDrop0408" onDragOver="#dragOver0408"
+                              GridPane.columnIndex="3" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0408" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0408" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0508" onDragDropped="#dragDrop0508" onDragOver="#dragOver0508" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                        <Pane fx:id="board0508" onDragDropped="#dragDrop0508" onDragOver="#dragOver0508"
+                              GridPane.columnIndex="4" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0508" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0508" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0608" onDragDropped="#dragDrop0608" onDragOver="#dragOver0608" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                        <Pane fx:id="board0608" onDragDropped="#dragDrop0608" onDragOver="#dragOver0608"
+                              GridPane.columnIndex="5" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0608" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0608" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0708" onDragDropped="#dragDrop0708" onDragOver="#dragOver0708" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                        <Pane fx:id="board0708" onDragDropped="#dragDrop0708" onDragOver="#dragOver0708"
+                              GridPane.columnIndex="6" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0708" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0708" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0808" onDragDropped="#dragDrop0808" onDragOver="#dragOver0808" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                        <Pane fx:id="board0808" onDragDropped="#dragDrop0808" onDragOver="#dragOver0808"
+                              GridPane.columnIndex="7" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0808" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0808" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0908" onDragDropped="#dragDrop0908" onDragOver="#dragOver0908" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                        <Pane fx:id="board0908" onDragDropped="#dragDrop0908" onDragOver="#dragOver0908"
+                              GridPane.columnIndex="8" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image0908" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0908" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1008" onDragDropped="#dragDrop1008" onDragOver="#dragOver1008" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                        <Pane fx:id="board1008" onDragDropped="#dragDrop1008" onDragOver="#dragOver1008"
+                              GridPane.columnIndex="9" GridPane.rowIndex="7">
                             <children>
-                                <ImageView fx:id="image1008" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1008" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0109" onDragDropped="#dragDrop0109" onDragOver="#dragOver0109" GridPane.rowIndex="8">
+                        <Pane fx:id="board0109" onDragDropped="#dragDrop0109" onDragOver="#dragOver0109"
+                              GridPane.rowIndex="8" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0109" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0109" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0209" onDragDropped="#dragDrop0209" onDragOver="#dragOver0209" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                        <Pane fx:id="board0209" onDragDropped="#dragDrop0209" onDragOver="#dragOver0209"
+                              GridPane.columnIndex="1" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0209" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0209" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0309" onDragDropped="#dragDrop0309" onDragOver="#dragOver0309" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                        <Pane fx:id="board0309" onDragDropped="#dragDrop0309" onDragOver="#dragOver0309"
+                              GridPane.columnIndex="2" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0309" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0309" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0409" onDragDropped="#dragDrop0409" onDragOver="#dragOver0409" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                        <Pane fx:id="board0409" onDragDropped="#dragDrop0409" onDragOver="#dragOver0409"
+                              GridPane.columnIndex="3" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0409" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0409" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0509" onDragDropped="#dragDrop0509" onDragOver="#dragOver0509" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                        <Pane fx:id="board0509" onDragDropped="#dragDrop0509" onDragOver="#dragOver0509"
+                              GridPane.columnIndex="4" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0509" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0509" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0609" onDragDropped="#dragDrop0609" onDragOver="#dragOver0609" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                        <Pane fx:id="board0609" onDragDropped="#dragDrop0609" onDragOver="#dragOver0609"
+                              GridPane.columnIndex="5" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0609" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0609" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0709" onDragDropped="#dragDrop0709" onDragOver="#dragOver0709" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                        <Pane fx:id="board0709" onDragDropped="#dragDrop0709" onDragOver="#dragOver0709"
+                              GridPane.columnIndex="6" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0709" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0709" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0809" onDragDropped="#dragDrop0809" onDragOver="#dragOver0809" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                        <Pane fx:id="board0809" onDragDropped="#dragDrop0809" onDragOver="#dragOver0809"
+                              GridPane.columnIndex="7" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0809" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0809" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0909" onDragDropped="#dragDrop0909" onDragOver="#dragOver0909" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                        <Pane fx:id="board0909" onDragDropped="#dragDrop0909" onDragOver="#dragOver0909"
+                              GridPane.columnIndex="8" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image0909" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0909" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1009" onDragDropped="#dragDrop1009" onDragOver="#dragOver1009" GridPane.columnIndex="9" GridPane.rowIndex="8">
+                        <Pane fx:id="board1009" onDragDropped="#dragDrop1009" onDragOver="#dragOver1009"
+                              GridPane.columnIndex="9" GridPane.rowIndex="8">
                             <children>
-                                <ImageView fx:id="image1009" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1009" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0110" onDragDropped="#dragDrop0110" onDragOver="#dragOver0110" GridPane.rowIndex="9">
+                        <Pane fx:id="board0110" onDragDropped="#dragDrop0110" onDragOver="#dragOver0110"
+                              GridPane.rowIndex="9" GridPane.columnIndex="0">
                             <children>
-                                <ImageView fx:id="image0110" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0110" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0210" onDragDropped="#dragDrop0210" onDragOver="#dragOver0210" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                        <Pane fx:id="board0210" onDragDropped="#dragDrop0210" onDragOver="#dragOver0210"
+                              GridPane.columnIndex="1" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0210" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0210" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0310" onDragDropped="#dragDrop0310" onDragOver="#dragOver0310" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                        <Pane fx:id="board0310" onDragDropped="#dragDrop0310" onDragOver="#dragOver0310"
+                              GridPane.columnIndex="2" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0310" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0310" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0410" onDragDropped="#dragDrop0410" onDragOver="#dragOver0410" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                        <Pane fx:id="board0410" onDragDropped="#dragDrop0410" onDragOver="#dragOver0410"
+                              GridPane.columnIndex="3" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0410" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0410" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0510" onDragDropped="#dragDrop0510" onDragOver="#dragOver0510" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                        <Pane fx:id="board0510" onDragDropped="#dragDrop0510" onDragOver="#dragOver0510"
+                              GridPane.columnIndex="4" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0510" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0510" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0610" onDragDropped="#dragDrop0610" onDragOver="#dragOver0610" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                        <Pane fx:id="board0610" onDragDropped="#dragDrop0610" onDragOver="#dragOver0610"
+                              GridPane.columnIndex="5" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0610" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0610" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0710" onDragDropped="#dragDrop0710" onDragOver="#dragOver0710" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                        <Pane fx:id="board0710" onDragDropped="#dragDrop0710" onDragOver="#dragOver0710"
+                              GridPane.columnIndex="6" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0710" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0710" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0810" onDragDropped="#dragDrop0810" onDragOver="#dragOver0810" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                        <Pane fx:id="board0810" onDragDropped="#dragDrop0810" onDragOver="#dragOver0810"
+                              GridPane.columnIndex="7" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0810" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0810" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0910" onDragDropped="#dragDrop0910" onDragOver="#dragOver0910" GridPane.columnIndex="8" GridPane.rowIndex="9">
+                        <Pane fx:id="board0910" onDragDropped="#dragDrop0910" onDragOver="#dragOver0910"
+                              GridPane.columnIndex="8" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image0910" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0910" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1010" onDragDropped="#dragDrop1010" onDragOver="#dragOver1010" GridPane.columnIndex="9" GridPane.rowIndex="9">
+                        <Pane fx:id="board1010" onDragDropped="#dragDrop1010" onDragOver="#dragOver1010"
+                              GridPane.columnIndex="9" GridPane.rowIndex="9">
                             <children>
-                                <ImageView fx:id="image1010" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1010" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0101" onDragDropped="#dragDrop0101" onDragOver="#dragOver0101">
+                        <Pane fx:id="board0101" onDragDropped="#dragDrop0101" onDragOver="#dragOver0101"
+                              GridPane.columnIndex="0" GridPane.rowIndex="0">
                             <children>
-                                <ImageView fx:id="image0101" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0101" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0201" onDragDropped="#dragOver0201" onDragOver="#dragOver0201" GridPane.columnIndex="1">
+                        <Pane fx:id="board0201" onDragDropped="#dragDrop0201" onDragOver="#dragOver0201"
+                              GridPane.rowIndex="0" GridPane.columnIndex="1">
                             <children>
-                                <ImageView fx:id="image0201" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0201" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0301" onDragDropped="#dragOver0301" onDragOver="#dragOver0301" GridPane.columnIndex="2">
+                        <Pane fx:id="board0301" onDragDropped="#dragDrop0301" onDragOver="#dragOver0301"
+                              GridPane.rowIndex="0" GridPane.columnIndex="2">
                             <children>
-                                <ImageView fx:id="image0301" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0301" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0401" onDragDropped="#dragOver0401" onDragOver="#dragOver0401" GridPane.columnIndex="3">
+                        <Pane fx:id="board0401" onDragDropped="#dragDrop0401" onDragOver="#dragOver0401"
+                              GridPane.rowIndex="0" GridPane.columnIndex="3">
                             <children>
-                                <ImageView fx:id="image0401" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0401" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0501" onDragDropped="#dragOver0501" onDragOver="#dragOver0501" GridPane.columnIndex="4">
+                        <Pane fx:id="board0501" onDragDropped="#dragDrop0501" onDragOver="#dragOver0501"
+                              GridPane.rowIndex="0" GridPane.columnIndex="4">
                             <children>
-                                <ImageView fx:id="image0501" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0501" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0601" onDragDropped="#dragOver0601" onDragOver="#dragOver0601" GridPane.columnIndex="5">
+                        <Pane fx:id="board0601" onDragDropped="#dragDrop0601" onDragOver="#dragOver0601"
+                              GridPane.rowIndex="0" GridPane.columnIndex="5">
                             <children>
-                                <ImageView fx:id="image0601" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0601" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0701" onDragDropped="#dragOver0701" onDragOver="#dragOver0701" GridPane.columnIndex="6">
+                        <Pane fx:id="board0701" onDragDropped="#dragDrop0701" onDragOver="#dragOver0701"
+                              GridPane.rowIndex="0" GridPane.columnIndex="6">
                             <children>
-                                <ImageView fx:id="image0701" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0701" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0801" onDragDropped="#dragOver0801" onDragOver="#dragOver0801" GridPane.columnIndex="7">
+                        <Pane fx:id="board0801" onDragDropped="#dragDrop0801" onDragOver="#dragOver0801"
+                              GridPane.rowIndex="0" GridPane.columnIndex="7">
                             <children>
-                                <ImageView fx:id="image0801" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0801" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board0901" onDragDropped="#dragOver0901" onDragOver="#dragOver0901" GridPane.columnIndex="8">
+                        <Pane fx:id="board0901" onDragDropped="#dragDrop0901" onDragOver="#dragOver0901"
+                              GridPane.rowIndex="0" GridPane.columnIndex="8">
                             <children>
-                                <ImageView fx:id="image0901" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image0901" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
-                        <Pane fx:id="board1001" onDragDropped="#dragOver1001" onDragOver="#dragOver1001" GridPane.columnIndex="9">
+                        <Pane fx:id="board1001" onDragDropped="#dragDrop1001" onDragOver="#dragOver1001"
+                              GridPane.rowIndex="0" GridPane.columnIndex="9">
                             <children>
-                                <ImageView fx:id="image1001" layoutX="1" layoutY="1" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fx:id="image1001" pickOnBounds="true" preserveRatio="true"/>
                             </children>
                         </Pane>
                     </children>
@@ -554,67 +656,78 @@
             <left>
                 <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <opaqueInsets>
-                        <Insets right="2.0" />
+                        <Insets right="2.0"/>
                     </opaqueInsets>
                     <padding>
-                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
                     </padding>
                     <children>
                         <Pane fx:id="Player1">
                             <children>
-                                <Label layoutX="28.0" layoutY="32.0" text="Player1" />
-                                <TextField fx:id="Player1Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
+                                <Label layoutX="28.0" layoutY="32.0" text="Player1"/>
+                                <TextField fx:id="Player1Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0"
+                                           prefWidth="62.0"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
                             </children>
                         </Pane>
                         <Pane fx:id="Player2" GridPane.columnIndex="1">
                             <children>
-                                <Label layoutX="27.0" layoutY="32.0" text="Player2" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField fx:id="Player2Score" layoutX="19.0" layoutY="184.0" prefWidth="62.0" />
+                                <Label layoutX="27.0" layoutY="32.0" text="Player2"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField fx:id="Player2Score" layoutX="19.0" layoutY="184.0" prefWidth="62.0"/>
                             </children>
                         </Pane>
                         <Pane fx:id="Player3" GridPane.rowIndex="1">
                             <children>
-                                <Label layoutX="27.0" layoutY="34.0" text="Player3" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField fx:id="Player3Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                                <Label layoutX="27.0" layoutY="34.0" text="Player3"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField fx:id="Player3Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0"
+                                           prefWidth="62.0"/>
                             </children>
                         </Pane>
                         <Pane fx:id="Player4" GridPane.columnIndex="1" GridPane.rowIndex="1">
                             <children>
-                                <Label layoutX="27.0" layoutY="35.0" text="Player4" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField fx:id="Player4Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                                <Label layoutX="27.0" layoutY="35.0" text="Player4"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField fx:id="Player4Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0"
+                                           prefWidth="62.0"/>
                             </children>
                         </Pane>
                         <Pane fx:id="Player5" GridPane.rowIndex="2">
                             <children>
-                                <Label layoutX="27.0" layoutY="30.0" text="Player5" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField fx:id="Player5Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                                <Label layoutX="27.0" layoutY="30.0" text="Player5"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField fx:id="Player5Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0"
+                                           prefWidth="62.0"/>
                             </children>
                         </Pane>
                         <Pane fx:id="Player6" GridPane.columnIndex="1" GridPane.rowIndex="2">
                             <children>
-                                <Label layoutX="27.0" layoutY="31.0" text="Player6" />
-                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0" promptText="Role" />
-                                <Label layoutX="32.0" layoutY="156.0" text="Score" />
-                                <TextField fx:id="Player6Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0" prefWidth="62.0" />
+                                <Label layoutX="27.0" layoutY="31.0" text="Player6"/>
+                                <TextField layoutX="8.0" layoutY="92.0" prefHeight="28.0" prefWidth="85.0"
+                                           promptText="Role"/>
+                                <Label layoutX="32.0" layoutY="156.0" text="Score"/>
+                                <TextField fx:id="Player6Score" layoutX="19.0" layoutY="184.0" prefHeight="28.0"
+                                           prefWidth="62.0"/>
                             </children>
                         </Pane>
                     </children>
@@ -623,31 +736,31 @@
             <right>
                 <GridPane gridLinesVisible="true" prefHeight="731.0" prefWidth="194.0" BorderPane.alignment="CENTER">
                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <opaqueInsets>
-                        <Insets left="2.0" />
+                        <Insets left="2.0"/>
                     </opaqueInsets>
                     <padding>
-                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
                     </padding>
                     <children>
                         <Pane fx:id="card0101" onDragDetected="#dragDetected0101">
                             <children>
                                 <ImageView pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@CardImage11.jpg" />
+                                        <Image url="@CardImage11.jpg"/>
                                     </image>
                                 </ImageView>
                             </children>
@@ -656,7 +769,7 @@
                             <children>
                                 <ImageView pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@CardImage12.jpg" />
+                                        <Image url="@CardImage12.jpg"/>
                                     </image>
                                 </ImageView>
                             </children>
@@ -665,16 +778,17 @@
                             <children>
                                 <ImageView pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@CardImage21.jpg" />
+                                        <Image url="@CardImage21.jpg"/>
                                     </image>
                                 </ImageView>
                             </children>
                         </Pane>
-                        <Pane fx:id="card0202" onDragDetected="#dragDetected0202" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Pane fx:id="card0202" onDragDetected="#dragDetected0202" GridPane.columnIndex="1"
+                              GridPane.rowIndex="1">
                             <children>
                                 <ImageView pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@CardImage22.jpg" />
+                                        <Image url="@CardImage22.jpg"/>
                                     </image>
                                 </ImageView>
                             </children>
@@ -683,35 +797,38 @@
                             <children>
                                 <ImageView pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@CardImage31.jpg" />
+                                        <Image url="@CardImage31.jpg"/>
                                     </image>
                                 </ImageView>
                             </children>
                         </Pane>
-                        <Pane fx:id="card0203" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Pane fx:id="card0104" GridPane.rowIndex="3" />
-                        <Pane fx:id="card0204" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Pane fx:id="card0105" GridPane.rowIndex="4" />
-                        <Pane fx:id="card0205" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Pane fx:id="card0106" GridPane.rowIndex="5" />
-                        <Pane fx:id="card0206" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Pane fx:id="card0107" GridPane.rowIndex="6" />
-                        <Pane fx:id="card0207" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Pane fx:id="card0108" GridPane.rowIndex="7" />
-                        <Pane fx:id="card0208" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Pane fx:id="card0203" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Pane fx:id="card0104" GridPane.rowIndex="3"/>
+                        <Pane fx:id="card0204" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Pane fx:id="card0105" GridPane.rowIndex="4"/>
+                        <Pane fx:id="card0205" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                        <Pane fx:id="card0106" GridPane.rowIndex="5"/>
+                        <Pane fx:id="card0206" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                        <Pane fx:id="card0107" GridPane.rowIndex="6"/>
+                        <Pane fx:id="card0207" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                        <Pane fx:id="card0108" GridPane.rowIndex="7"/>
+                        <Pane fx:id="card0208" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
                     </children>
                 </GridPane>
             </right>
             <top>
                 <Pane prefHeight="150.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
                     <children>
-                        <TextField fx:id="PlayerNum" layoutX="170.0" layoutY="36.0" prefHeight="27.0" prefWidth="100.0" />
-                        <Label layoutX="46.0" layoutY="41.0" text="Numbers of Player" />
-                        <Label layoutX="46.0" layoutY="102.0" text="Numbers of Gold" />
-                        <TextField fx:id="GoldNum" layoutX="170.0" layoutY="97.0" prefHeight="27.0" prefWidth="100.0" />
-                        <Button fx:id="Generate" layoutX="320.0" layoutY="36.0" mnemonicParsing="false" onAction="#setNum" text="Genreate" />
-                        <Button fx:id="Cencal" layoutX="328.0" layoutY="97.0" mnemonicParsing="false" text="Cencal" />
-                        <TextArea fx:id="Introduction" layoutX="629.0" layoutY="19.0" prefHeight="112.0" prefWidth="551.0" />
+                        <TextField fx:id="PlayerNum" layoutX="170.0" layoutY="36.0" prefHeight="27.0"
+                                   prefWidth="100.0"/>
+                        <Label layoutX="46.0" layoutY="41.0" text="Numbers of Player"/>
+                        <Label layoutX="46.0" layoutY="102.0" text="Numbers of Gold"/>
+                        <TextField fx:id="GoldNum" layoutX="170.0" layoutY="97.0" prefHeight="27.0" prefWidth="100.0"/>
+                        <Button fx:id="Generate" layoutX="320.0" layoutY="36.0" mnemonicParsing="false"
+                                onAction="#setNum" text="Genreate"/>
+                        <Button fx:id="Cencal" layoutX="328.0" layoutY="97.0" mnemonicParsing="false" text="Cencal"/>
+                        <TextArea fx:id="Introduction" layoutX="629.0" layoutY="19.0" prefHeight="112.0"
+                                  prefWidth="551.0"/>
                     </children>
                 </Pane>
             </top>

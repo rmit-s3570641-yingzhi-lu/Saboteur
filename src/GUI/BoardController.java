@@ -15,6 +15,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * Project Saboteur
@@ -63,6 +64,10 @@ public class BoardController extends Application {
         loader.setLocation(BoardController.class.getResource("Board.fxml"));
         AnchorPane mainCenter = loader.load();
         mainLayout.setCenter(mainCenter);
+    }
+
+    public void setGoldImage( int[] location ) {
+
     }
 
     @FXML
@@ -319,6 +324,7 @@ public class BoardController extends Application {
 
     /**
      * This method switch the Pane card into card number
+     * NOT USED YET
      *
      * @param card Pane
      * @return int[]
@@ -381,6 +387,7 @@ public class BoardController extends Application {
         return ints;
     }
 
+
     /**
      * This method generate the Image URL using Pane card
      *
@@ -399,7 +406,7 @@ public class BoardController extends Application {
      */
     @FXML
     public void setNum() {
-        if (PlayerNum.getText() != null && GoldNum.getText() != null) {
+        if (!Objects.equals(PlayerNum.getText(), "") && !Objects.equals(GoldNum.getText(), "")) {
             int player = Integer.parseInt(PlayerNum.getText());
             int gold = Integer.parseInt(GoldNum.getText());
             System.enterPlayers(player);
@@ -462,8 +469,6 @@ public class BoardController extends Application {
     /**
      * Drag Methods End
      */
-
-
 
 
     /**
