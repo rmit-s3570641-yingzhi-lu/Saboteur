@@ -1,5 +1,6 @@
 package GUI;
 
+import CLI.Cards.Card;
 import CLI.System;
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -1879,11 +1880,12 @@ public class BoardController extends Application {
 
     /**
      * Drop Methods End
-     *
      */
 
 
-//    public String getIntroduction(){
-//        String
-//    }
+    public String getIntroduction( Card card ) {
+        String introduction = null;
+        introduction = System.getIntroduction(card);
+        return introduction;
+    }
 }
